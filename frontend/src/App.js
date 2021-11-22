@@ -1,8 +1,12 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
+import Login from './components/login/Login';
+
 
 const App = () => {
-	return <div className="App">App component</div>;
+	return <div>
+		<Login/>
+	</div>
 };
 
 export default App;
