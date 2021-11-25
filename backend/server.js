@@ -1,11 +1,13 @@
 const express = require('express');
 const cors = require('cors');
 const { userRouter } = require('./routers/routes/userRouter');
+const { jobRouter } = require('./routers/routes/jobRouter');
 
 const app = express();
 
 //routers
 app.use('/user', userRouter);
+app.use('/job', jobRouter);
 
 
 //built-in middlewares

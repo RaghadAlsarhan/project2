@@ -1,11 +1,17 @@
 import React from 'react';
 import { Route } from 'react-router-dom';
-import Login from './components/login/Login';
+import Dashboard from './components/dashboard';
+import Login from './components/login/index';
+import Test from './components/login/js'
+import Register from './components/registration/index'
 
 
 const App = () => {
 	return <div>
-		<Login/>
+		{/* <Login /> */}
+		<Dashboard />
+		{/* <Register /> */}
+		{/* <Test /> */}
 	</div>
 };
 

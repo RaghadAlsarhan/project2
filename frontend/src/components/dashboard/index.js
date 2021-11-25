@@ -1,7 +1,34 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import DisplayCard from "./DisplayCard";
 
-const Dashboard = () => {
-	return <div className="App">Dashboard component</div>;
-};
+function Dashboard() {
+  // statedat
+  const [data, setData] = useState([]);
 
+  // axios
+  useEffect(() => {
+    axios.get("/job").then((res) => {
+      console.log(res.data);
+      setData(res.data);
+      //console.log(data);
+    });
+  }, []);
+    console.log(data);
+
+  return (
+     <div>
+    {data.map((elem)=>{
+        return(
+        <DisplayCard
+        title = {elem.title}
+        type = {elem.type}
+        location = {elem.location}
+        // description = {elem.description}
+        />
+        );
+    })}
+    </div>
+  );
+}
 export default Dashboard;
