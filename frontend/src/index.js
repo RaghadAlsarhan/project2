@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 ReactDOM.render(
   // The provider will enable the child components to access the store
-	<Router>
+	<BrowserRouter>
 		<App />
-	</Router>,
+	</BrowserRouter>,
   document.getElementById("root")
 );

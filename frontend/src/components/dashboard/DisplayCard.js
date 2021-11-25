@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router";
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -7,10 +8,13 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 function DisplayCard(props){
-    // title: "Senior Software Engineer",
-    // location: "Ryiadh",
-    // type: "full-position",
-    // description: `Introduction
+   
+    const navigate = useNavigate();
+
+    function handleClick(){
+        navigate('/job/:id', { state: {id: {props.id} } });
+
+    }
     return(
     <Card sx={{ maxWidth: 345,
     display:"flex"
@@ -36,7 +40,7 @@ function DisplayCard(props){
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Learn More</Button>
+        <Button size="small" onClick={handleClick}>Learn More</Button>
       </CardActions>
     </Card>
     )

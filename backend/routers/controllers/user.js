@@ -5,6 +5,8 @@ const getAllUsers = (req, res)=>{
 }
 
 const getUser = (req, res)=>{
+    console.log("Inside Login");
+    console.log(req.body);
     const foundUser = user.find(
         ({email, password})=>
         email === req.body.email && password === req.body.password

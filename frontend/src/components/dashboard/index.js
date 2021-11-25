@@ -3,7 +3,7 @@ import axios from "axios";
 import DisplayCard from "./DisplayCard";
 
 function Dashboard() {
-  // statedat
+  // statedata
   const [data, setData] = useState([]);
 
   // axios
@@ -24,7 +24,6 @@ function Dashboard() {
         title = {elem.title}
         type = {elem.type}
         location = {elem.location}
-        // description = {elem.description}
         />
         );
     })}
