@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Form, Button } from 'react-bootstrap';
+import {Link} from 'react-router-dom'
 
 
 function Register() {
@@ -90,10 +91,11 @@ function Register() {
           }}
         />
       </Form.Group>
-
+      <Link to="/user/signin">
       <Button variant="primary" type="submit">
         Submit
       </Button>
+      </Link>
     </Form>
   );
 }

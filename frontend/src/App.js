@@ -2,9 +2,9 @@ import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 import Dashboard from './components/dashboard';
 import Login from './components/login/index';
-import Test from './components/login/js'
 import Register from './components/registration/index'
 import DisplayPage from './components/DetailPage/index'
+import Home from './components/Home/index'
 
 
 const App = () => {

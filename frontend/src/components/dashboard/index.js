@@ -21,6 +21,7 @@ function Dashboard() {
     {data.map((elem)=>{
         return(
         <DisplayCard
+        id = {elem.id}
         title = {elem.title}
         type = {elem.type}
         location = {elem.location}

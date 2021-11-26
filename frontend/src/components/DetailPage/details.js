@@ -1,8 +1,10 @@
 import React from "react";
-import {Card, Button, ListGroup, ListGroupItem} from "react-bootstrap";
+import {Card, Button, ListGroup, ListGroupItem, Container} from "react-bootstrap";
+import {Link, useParams} from 'react-router-dom'
 
 function DisplayDetails(props) {
   return (
+    <Container>
     <Card style={{ width: "18rem" }}>
       <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
       <Card.Body>
@@ -16,11 +18,12 @@ function DisplayDetails(props) {
         <ListGroupItem>Location: {props.location}</ListGroupItem>
       </ListGroup>
       <Card.Body>
-        {/* <Card.Link href="#">Card Link</Card.Link>
-        <Card.Link href="#">Another Link</Card.Link> */}
+        <Link to="/user/signin">
         <Button variant="primary">Apply now</Button>
+        </Link>
       </Card.Body>
     </Card>
+    </Container>
   );
 }
 export default DisplayDetails;

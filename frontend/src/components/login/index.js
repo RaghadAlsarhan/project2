@@ -1,8 +1,9 @@
 //import "Login.css";
 import React, {useState} from "react";
 import {useNavigate} from 'react-router-dom'
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Card } from 'react-bootstrap';
 import axios from "axios";
+import {Link} from 'react-router-dom';
 
 
 function Login() {
@@ -18,7 +19,7 @@ const navigate = useNavigate();
         .post("/user/signin",{email, password})
         .then((res)=>{
             console.log(res.data);
-            // navigate("/signin");
+            navigate("/job/id");
         })
         .catch((err)=>{
             console.log(err);
@@ -26,6 +27,7 @@ const navigate = useNavigate();
     }
 
   return (
+    <div>
     <Form id="formName" onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter your email</Form.Label>
@@ -54,7 +56,13 @@ const navigate = useNavigate();
       <Button variant="primary" type="submit">
         Submit
       </Button>
+      <br/>
+      <Link to="/user/register">
+      <Card.Link href="#">If you did not register, register</Card.Link>
+      </Link>
     </Form>
+    
+    </div>
   );
 }
 export default Login;

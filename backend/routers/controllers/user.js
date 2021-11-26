@@ -19,6 +19,7 @@ const getUser = (req, res)=>{
 
 const addNewUser = (req,res)=>{
     const addedUser = {
+        id: req.body.id,
         email: req.body.email,
         password: req.body.password,
         degree: req.body.degree,
@@ -27,6 +28,7 @@ const addNewUser = (req,res)=>{
     };
     console.log(addedUser)
     user.push(addedUser)
+    res.send(user)
     res.status(201).send(addedUser);
     res.status(400).send("error");
 };

@@ -6,13 +6,15 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
+import {Link} from 'react-router-dom'
+
 
 function DisplayCard(props){
    
     const navigate = useNavigate();
-
-    function handleClick(){
-        navigate('/job/:id', { state: {id: {props.id} } });
+    const jobId = props.id;
+    function handleClick(jobId){
+         navigate(`/job/${jobId}`);
 
     }
     return(
@@ -40,7 +42,7 @@ function DisplayCard(props){
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small" onClick={handleClick}>Learn More</Button>
+        <Button size="small" onClick={()=>{handleClick(props.id)}}>Learn More</Button>
       </CardActions>
     </Card>
     )

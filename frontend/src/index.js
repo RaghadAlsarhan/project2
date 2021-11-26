@@ -4,13 +4,14 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+
 // import provider
 // import store
 
 ReactDOM.render(
   // The provider will enable the child components to access the store
-	<BrowserRouter>
+	<Router>
 		<App />
-	</BrowserRouter>,
+	</Router>,
   document.getElementById("root")
 );
