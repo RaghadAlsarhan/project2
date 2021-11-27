@@ -5,11 +5,11 @@ import Devjob from '../img/Devjob.png'
 function Header() {
   return (
 	  <div>
-	<Nav defaultActiveKey="/" as="ul" style={{marginLeft:"-50px",marginTop:"-20px"}}>
+	<Nav defaultActiveKey="/" as="ul" style={{marginLeft:"0px",marginTop:"-20px"}}>
 		<Nav.Item as="li">
 	<Image src={Devjob} alt="logo" style={{height:"11rem", width:"9rem"}}></Image>
 	</Nav.Item>
-	<Nav.Item as="li" style={{marginTop:"60px"}}>
+	<Nav.Item as="li" style={{marginTop:"60px",marginLeft:'10px'}}>
 	  <Nav.Link href="/" style={{color:"#89321A"}}>Home</Nav.Link>
 	</Nav.Item>
 	<Nav.Item as="li" style={{marginTop:"60px"}}>
@@ -22,29 +22,3 @@ function Header() {
 }
 
 export default Header;
-
-{/* <Row>
-      <Nav className="justify-content-start" activeKey="/home" style={{margin:"20px 0px", position:"sticky"}}>
-	  <Col>
-	  <Nav.Item>
-		  <Image src={Devjob} alt="logo" style={{height:"10rem", width:"10rem"}}></Image>
-        </Nav.Item>
-		</Col>
-		<Col text-right>
-        <Nav.Item>
-          <Nav.Link href="/" style={{color:"#89321A"}}>Home</Nav.Link>
-        </Nav.Item>
-		</Col>
-		<Col>
-        <Nav.Item>
-          <Nav.Link eventKey="link-1" style={{color:"#89321A"}}>Link</Nav.Link>
-        </Nav.Item>
-		</Col>
-		<Col>
-        <Nav.Item>
-          <Nav.Link eventKey="link-2" style={{color:"#89321A"}}>Link</Nav.Link>
-        </Nav.Item>
-		</Col>
-      
-      </Nav>
-    </Row> */}

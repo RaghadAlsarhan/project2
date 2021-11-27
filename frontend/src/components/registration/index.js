@@ -58,7 +58,7 @@ function Register() {
         />
       </Form.Group>
 
-      {/* <Form.Group className="mb-3" controlId="formBasicDegree">
+      <Form.Group className="mb-3" controlId="formBasicDegree">
         <Form.Label>Degree</Form.Label>
         <Form.Control
           type="text"
@@ -84,7 +84,7 @@ function Register() {
         />
       </Form.Group>
 
-      <Form.Group className="mb-3" controlId="formBasicGPA">
+      {/*<Form.Group className="mb-3" controlId="formBasicGPA">
         <Form.Label>GPA</Form.Label>
         <Form.Control
           type="text"

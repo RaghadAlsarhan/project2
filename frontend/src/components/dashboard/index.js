@@ -22,7 +22,7 @@ function Dashboard() {
   return (
     <Container>
       <Header />
-     <div style={{display:"inline-flex",gap:"20px", justifyContent:"space-around",flexWrap:"wrap",marginTop:'6 rem'}}>
+     <div style={{display:"inline-flex",gap:"20px", justifyContent:"space-around",flexWrap:"wrap",marginTop:'7rem'}}>
        
     {data.map((elem)=>{
         return(
@@ -35,8 +35,9 @@ function Dashboard() {
         />
         );
     })}
-    {/* <Footer /> */}
+    
     </div>
+    <Footer />
    </Container>
   );
 }
