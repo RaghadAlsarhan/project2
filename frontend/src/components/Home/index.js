@@ -2,21 +2,29 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Container, Row, Col, Button, Image } from "react-bootstrap";
 import "./home.css";
-import welcomeHome from './img/welcomeHome';
+import welcomeHome from "../img/welcomeHome.png"
+import Header from '../header/index'
 
 
 function Home() {
   return (
-    <Container className="mainCont">
-      <Row style={{highet: "100rem",margin: "200px 70px"}}>
-        <Col>
-          <Image src={welcomeHome} alt=""/>
+    <Container className="mainCont" >
+      <Header />
+      <Row style={{margin: "0px 1px"}}>
+        <Col sm={5}>
+          <Image src={welcomeHome} alt="" style={{height:"35rem", width:"35rem"}}/>
         </Col>
-        <Col xs={5}>
-        <h1>DevJob KSA</h1>
+        <Col sm={1}></Col>
+        {/* <Col></Col> */}
+        <Col sm={5} style={{margin: "100px 0px 100px 90px"}}>
+        <p style={{fontSize:"50px",color:"#001F3D"}}><b>DevJob </b><p style={{fontSize:"20px",display:"inline",opacity:".7"}}>KSA</p></p>
         <Col>
-        <h2>Kingdom of Saudi Arabia Development Job</h2>
+        <h2 style={{color:"#9A381D",opacity:".7"}}>Kingdom of Saudi Arabia Development Job</h2>
+        
         </Col>
+        <Link to={"/job"}>
+              <Button variant="primary" size="lg" style={{backgroundColor: "#9A381D", marginTop:"30px",border:"none",borderRadius:"20px",opacity:".9"}}>View Jobs</Button>
+       </Link>
         </Col>
       </Row>
     </Container>
@@ -24,34 +32,3 @@ function Home() {
 }
 
 export default Home;
-
-{
-  /* <Card className="bg-dark text-white">
-  <Card.Img src="holder.js/100px270" alt="Card image" />
-  <Card.ImgOverlay>
-    <Card.Title>Card title</Card.Title>
-    <Card.Text>
-      This is a wider card with supporting text below as a natural lead-in
-      to additional content. This content is a little bit longer.
-    </Card.Text>
-    <Card.Text>Last updated 3 mins ago</Card.Text>
-  </Card.ImgOverlay>
-  <Link to={"/job"}>
-  <button>click here</button>
-</Link>
-</Card> */
-}
-
-
-{/* <Card style={{ width: "18rem", boarder: "none" }}>
-            <Card.Img variant="left" src="holder.js/100px180" />
-            <Card.Body>
-              <Card.Title>DevJob KSA</Card.Title>
-              <Card.Text>
-                Kingdom of Saudi Arabia Development Job
-              </Card.Text>
-              <Link to={"/job"}>
-              <Button variant="primary">View Jobs</Button>
-              </Link>
-            </Card.Body>
-          </Card> */}

@@ -1,4 +1,4 @@
-const {job} = require('../jobDB')
+const job = require('../jobDB')
 const { jobRouter } = require('../routes/jobRouter')
 
 const getAllJob = (req, res)=> {

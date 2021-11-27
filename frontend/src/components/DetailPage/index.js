@@ -1,35 +1,43 @@
-import axios from 'axios';
-import React, { useEffect, useState } from 'react'
+import { Container } from "@mui/material";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 //import DisplayDetails from './details';
-import { useParams, } from "react-router-dom" 
+import { useParams } from "react-router-dom";
 //import { job } from '../../../../backend/routers/jobDB';
-import DisplayDetails from './details';
-import DisplayCard from './details'
+import DisplayDetails from "./details";
+import DisplayCard from "./details";
+import Header from "../header";
 
-function DisplayPage(){
-    const [data, setData] = useState([]);
-    const {id} = useParams()
+function DisplayPage() {
+  const [data, setData] = useState([]);
+  const [title, setTitle] = useState([]);
+  const [desc, setDesc] = useState([]);
+  const [type, setType] = useState([]);
+  const [location, setLocation] = useState([]);
+
+  const { id } = useParams();
+
+  useEffect(() => {
+    axios.get(`/job/${id}`).then((res) => {
+      setData(res.data)
+      setTitle(res.data.title);
+      setDesc(res.data.description);
+      setType(res.data.type);
+      setLocation(res.data.location);
+      })
+      // console.log({desc});
+  }, []);
   
-    useEffect(()=>{
-        axios.get(`/job/${id}`)
-        .then((res)=>{
-            //console.log(res.data);
-            setData(res.data);
-            console.log(data);
-        })
-        console.log(setData);
-        console.log(data);
-    },[])
-    return(
-        <div>
-            {console.log(data)}
-            <DisplayDetails 
-            title={DisplayCard.title}
-            description={DisplayCard.description}
-            type={DisplayCard.type}
-            location={DisplayCard.location}
-            />
-        </div>
-    )
-} 
+  return (
+    <Container>
+      <Header />
+          <DisplayDetails
+            title={title}
+            description={desc}
+            type={type}
+            location={location}
+          />
+    </Container>
+  );
+}
 export default DisplayPage;

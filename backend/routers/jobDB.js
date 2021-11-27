@@ -1,10 +1,12 @@
+// import ReactHtmlParser from 'react-html-parser';
+
 const job = [
     {
         id: 1,
         title: "Senior Software Engineer",
         location: "Ryiadh",
         type: "full-position",
-        description: `Introduction
+        description: `Introduction 
 
         At IBM, work is more than a job - it's a calling: To build. To design. To code. To consult. To think along with clients and sell. To make markets. To invent. To collaborate. Not just to do something better, but to attempt things you've never thought possible. Are you ready to lead in this new era of technology and solve some of the world's most challenging problems? If so, lets talk.
         
@@ -423,7 +425,7 @@ const job = [
     }
 ]
 
-module.exports = { job };
+module.exports =  job ;
 
 
 // {

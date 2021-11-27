@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DisplayCard from "./DisplayCard";
+import Header from '../header/index'
+import { Container } from "@mui/material";
+import Footer from "../footer";
 
 function Dashboard() {
   // statedata
@@ -17,7 +20,10 @@ function Dashboard() {
     console.log(data);
 
   return (
-     <div>
+    <Container>
+      <Header />
+     <div style={{display:"inline-flex",gap:"20px", justifyContent:"space-around",flexWrap:"wrap"}}>
+       
     {data.map((elem)=>{
         return(
         <DisplayCard
@@ -28,7 +34,9 @@ function Dashboard() {
         />
         );
     })}
+    {/* <Footer /> */}
     </div>
+   </Container>
   );
 }
 export default Dashboard;

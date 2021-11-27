@@ -1,28 +1,31 @@
 import React from "react";
-import {Card, Button, ListGroup, ListGroupItem, Container} from "react-bootstrap";
-import {Link, useParams} from 'react-router-dom'
+import {Card, Button, ListGroup, ListGroupItem, Container, Row} from "react-bootstrap";
+import { Link, useParams } from "react-router-dom";
 
 function DisplayDetails(props) {
   return (
     <Container>
-    <Card style={{ width: "18rem" }}>
-      <Card.Img variant="top" src="holder.js/100px180?text=Image cap" />
-      <Card.Body>
-        <Card.Title>{props.title}</Card.Title>
-        <Card.Text>
-          {props.description}
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroupItem>Type: {props.type}</ListGroupItem>
-        <ListGroupItem>Location: {props.location}</ListGroupItem>
-      </ListGroup>
-      <Card.Body>
-        <Link to="/user/signin">
-        <Button variant="primary">Apply now</Button>
-        </Link>
-      </Card.Body>
-    </Card>
+      <Row sm={9}>
+      <Card style={{ width: "70rem", height: "auto" }}>
+        <Card.Body>
+          <Card.Img
+            style={{ width: "30rem", height: "15rem",marginLeft:'4rem' }} variant="top" src="https://www.aleqt.com/sites/default/files/rbitem/2021/10/24/1780136-1840546666.png"/>
+          <Link to="/user/signin">
+            <Button variant="primary" size="lg" style={{backgroundColor: "#002952",border:"none",borderRadius:"10px",marginLeft:'20rem'}}>Apply now</Button>
+          </Link>
+        </Card.Body>
+        <Card.Body>
+          <Card.Title>{props.title}</Card.Title>
+          <Card.Text>{props.description}</Card.Text>
+        </Card.Body>
+        <Card.Body>
+          <ListGroup className="list-group-flush">
+            <ListGroupItem>Type: {props.type}</ListGroupItem>
+            <ListGroupItem>Location: {props.location}</ListGroupItem>
+          </ListGroup>
+        </Card.Body>
+      </Card>
+      </Row>
     </Container>
   );
 }

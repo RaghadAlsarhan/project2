@@ -1,7 +1,8 @@
 import axios from "axios";
 import React, { useState } from "react";
-import { Form, Button } from 'react-bootstrap';
+import { Form, Button, Container } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
+import Header from "../header";
 
 
 function Register() {
@@ -26,6 +27,8 @@ function Register() {
   }
 
   return (
+    <Container>
+    <Header />
     <Form id="regForm" onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Email address</Form.Label>
@@ -97,6 +100,7 @@ function Register() {
       </Button>
       </Link>
     </Form>
+    </Container>
   );
 }
 export default Register;

@@ -1,9 +1,10 @@
 //import "Login.css";
 import React, {useState} from "react";
 import {useNavigate} from 'react-router-dom'
-import { Form, Button, Card } from 'react-bootstrap';
+import { Form, Button, Card, Container } from 'react-bootstrap';
 import axios from "axios";
 import {Link} from 'react-router-dom';
+import Header from "../header";
 
 
 function Login() {
@@ -27,7 +28,8 @@ const navigate = useNavigate();
     }
 
   return (
-    <div>
+    <Container>
+    <Header />
     <Form id="formName" onSubmit={handleSubmit}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter your email</Form.Label>
@@ -62,7 +64,7 @@ const navigate = useNavigate();
       </Link>
     </Form>
     
-    </div>
+    </Container>
   );
 }
 export default Login;

@@ -1,12 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router";
-import Card from '@mui/material/Card';
-import CardActions from '@mui/material/CardActions';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import Button from '@mui/material/Button';
-import Typography from '@mui/material/Typography';
-import {Link} from 'react-router-dom'
+import {ListGroup,ListGroupItem, Card, Button} from 'react-bootstrap'
+import { display } from "@mui/system";
+import { Container } from "@mui/material";
 
 
 function DisplayCard(props){
@@ -18,33 +14,51 @@ function DisplayCard(props){
 
     }
     return(
-    <Card sx={{ maxWidth: 345,
-    display:"flex"
-     }}>
-      <CardMedia
-        component="img"
-        alt="green iguana"
-        height="140"
-        image="/static/images/cards/contemplative-reptile.jpg"
-      />
-      <CardContent>
-        <Typography gutterBottom variant="h5" component="div">   
-        {props.title}      
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {props.type}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {props.location}
-        </Typography>
-        <Typography variant="body2" color="text.secondary">
-          {props.description}
-        </Typography>
-      </CardContent>
-      <CardActions>
-        <Button size="small" onClick={()=>{handleClick(props.id)}}>Learn More</Button>
-      </CardActions>
+      <Card style={{width: '20rem',height:"auto",borderRadius:"20px"}}>
+      <Card.Img style={{borderRadius:"20px"}} variant="top" src="https://www.aleqt.com/sites/default/files/rbitem/2021/10/24/1780136-1840546666.png" />
+      <Card.Body>
+        <Card.Title>{props.title}</Card.Title>
+        <Card.Text>{props.description}</Card.Text>
+        <ListGroup className="list-group-flush">
+            <ListGroupItem>Type: {props.type}</ListGroupItem>
+            <ListGroupItem>Location: {props.location}</ListGroupItem>
+          </ListGroup>
+          <Button size="small" style={{marginTop:"10px",backgroundColor: "#9A381D",border:"none",borderRadius:"15px",opacity:".9",marginLeft:"30%"}} onClick={()=>{handleClick(props.id)}}>Learn More</Button>
+      </Card.Body>
     </Card>
     )
 }
 export default DisplayCard;
+
+
+ 
+
+
+
+// <Card sx={{ maxWidth: 345,
+//   display:"flex"
+//    }}>
+//     <CardMedia
+//       component="img"
+//       alt="green iguana"
+//       height="140"
+//       image="/static/images/cards/contemplative-reptile.jpg"
+//     />
+//     <CardContent>
+//       <Typography gutterBottom variant="h5" component="div">   
+//       {props.title}      
+//       </Typography>
+//       <Typography variant="body2" color="text.secondary">
+//         {props.type}
+//       </Typography>
+//       <Typography variant="body2" color="text.secondary">
+//         {props.location}
+//       </Typography>
+//       <Typography variant="body2" color="text.secondary">
+//         {props.description}
+//       </Typography>
+//     </CardContent>
+//     <CardActions>
+//       <Button size="small" onClick={()=>{handleClick(props.id)}}>Learn More</Button>
+//     </CardActions>
+//   </Card>
