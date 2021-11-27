@@ -6,6 +6,7 @@ const job = [
         title: "Senior Software Engineer",
         location: "Ryiadh",
         type: "full-position",
+        img:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%D8%B4%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9_%D9%84%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1_%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A_SDAIA.svg/1200px-%D8%B4%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9_%D9%84%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1_%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A_SDAIA.svg.png",
         description: `Introduction 
 
         At IBM, work is more than a job - it's a calling: To build. To design. To code. To consult. To think along with clients and sell. To make markets. To invent. To collaborate. Not just to do something better, but to attempt things you've never thought possible. Are you ready to lead in this new era of technology and solve some of the world's most challenging problems? If so, lets talk.
@@ -44,6 +45,7 @@ const job = [
         title: "Mobile App Developer",
         location: "Mecca",
         type: "full-position",
+        img:"https://almalnews.com/wp-content/uploads/2019/03/Huawei-Logo.jpg",
         description: `Job Summary
         As a Flutter Developer, you will create multi-platform apps for iOS and Android using Google's Flutter development framework.
         The primary focus will be on creating new experiences and maintaining the acclaimed app. You will additionally work on innovative new app projects as well as internally incubated ventures.
@@ -67,6 +69,7 @@ const job = [
         title: "Full Stack Developer",
         location: "Ryiadh",
         type: "full-position",
+        img:"https://vid.alarabiya.net/images/2014/11/20/c4b98ed7-bfec-4d3e-9cfb-d084d6c7a752/c4b98ed7-bfec-4d3e-9cfb-d084d6c7a752_16x9_1200x676.jpg?width=1138",
         description: `We are looking for a Full Stack Developer to produce scalable software solutions. You’ll be part of a cross-functional team that’s responsible for the full software development life cycle, from conception to deployment. As a Full Stack Developer, you should be comfortable around both front-end and back-end coding languages, development frameworks, and third-party libraries. You should also be a team player with a knack for visual design and utility. If you’re also familiar with Agile methodologies, we’d like to meet you.
         
         Responsibilities
@@ -118,45 +121,46 @@ const job = [
         title: "Java Web Developer",
         location: "Najran",
         type: "full-position",
+        img:"https://d33wubrfki0l68.cloudfront.net/5a00ec65bd83df6c7069731d86c26e69b3799f56/c1e42/assets/images/logo/logo-dark.png",
         description: `Responsibilities
 
-        ·       Contribute to all Stages of Software Development Lifecycle
+        · Contribute to all Stages of Software Development Lifecycle
         
-        ·       Design, implement and maintain Java-based applications that can be high-volume and low-latency
+        · Design, implement and maintain Java-based applications that can be high-volume and low-latency
         
-        ·       Analyze user requirements to define business objectives
+        · Analyze user requirements to define business objectives
         
-        ·       Envisioning system features and functionality
+        · Envisioning system features and functionality
         
-        ·       Define Application Objectives and functionality
+        · Define Application Objectives and functionality
         
-        ·       Ensure Application Designs Conform with Business Goals
+        · Ensure Application Designs Conform with Business Goals
         
-        ·       Develop and Test Software
+        · Develop and Test Software
         
-        ·       Identify and Resolve any Technical Issues Arising
+        · Identify and Resolve any Technical Issues Arising
         
-        ·       Create Detailed Design Documentation
+        · Create Detailed Design Documentation
         
-        ·       Propose Changes to current Java infrastructure
+        · Propose Changes to current Java infrastructure
         
-        ·       Develop Technical Designs for Application Development
+        · Develop Technical Designs for Application Development
         
-        ·       Develop Multimedia Applications
+        · Develop Multimedia Applications
         
-        ·       Write Well Designed, Testable Code
+        · Write Well Designed, Testable Code
         
-        ·       Conducting Software Analysis, Programming, Testing, and Debugging
+        · Conducting Software Analysis, Programming, Testing, and Debugging
         
-        ·       Manage Java and Java EE Application Development
+        · Manage Java and Java EE Application Development
         
-        ·       Develop Documentation to help users
+        · Develop Documentation to help users
         
-        ·       Transforming Requirements into Stipulations
+        · Transforming Requirements into Stipulations
         
-        ·       Prepare and Produce Releases of Software Components
+        · Prepare and Produce Releases of Software Components
         
-        ·       Support continuous Improvement - investigating alternatives and technologies, and presenting for architectural review 
+        · Support continuous Improvement - investigating alternatives and technologies, and presenting for architectural review 
         
         `
 
@@ -166,6 +170,7 @@ const job = [
         title: "NodeJS Backend Developer",
         location: "Mecca",
         type: "full-position",
+        img:"https://cdn.al-ain.com/images/2019/11/18/147-170151-samsung-uses-immersed-factories-china-phones_700x400.png",
         description: `In order to build and maintain the technology needed to power the components which enable user facing side of the applications, we are looking forward to hire a backend developer to join our team. Being one of the important technical team member in the development team, you will be responsible and entitled to the following requirements and objectives:
 
         Responsibilities
@@ -189,6 +194,7 @@ const job = [
         title: "Blockchain Developer",
         location: "Dammam",
         type: "full-position",
+        img:"https://mychart.mcc.med.sa/assets/global/image/web-moh01-logo.png",
         description: `
         We are looking for a core/software blockchain developer. Responsible for developing the architecture of the system and the design of consensus protocol. Responsible for using those architecture and protocols to build decentralized applications on blockchain.
         `
@@ -199,6 +205,7 @@ const job = [
         title: "Cloud Solution Architect",
         location: "Ryiadh",
         type: "full-position",
+        img:"https://almalnews.com/wp-content/uploads/2019/03/Huawei-Logo.jpg",
         description: `Job Purpose
 
         Performing ongoing analysis of digital and cloud systems used in the Foundation and providing assistance for digital and cloud implementation
@@ -263,6 +270,7 @@ const job = [
         title: "PHP Developer",
         location: "Dammam",
         type: "full-position",
+        img:"https://alsaudi24.com/wp-content/uploads/2020/01/D9wZXisWkAEWORg.jpg",
         description: `The ideal candidate is a highly resourceful and innovative developer with good experience in the layout, design and coding of websites specifically in PHP format. You must also possess a strong knowledge of web application development using PHP programming language and MySQL Server databases. 
 
  
@@ -283,6 +291,7 @@ const job = [
         title: "Back End Developer",
         location: "Ryiadh",
         type: "full-position",
+        img:"https://almalnews.com/wp-content/uploads/2019/03/Huawei-Logo.jpg",
         description: `Back End Developer will work in a team environment in the design and execution of web and mobile products. We are looking for a self-starter who is excited to learn and improve his or her skillset in the ever-evolving medium of the web. The ideal candidate is a creative thinker with experience in user experience definition and user interface design.
 
 
@@ -311,6 +320,7 @@ const job = [
         title: "Web Developer",
         location: "Ryiadh",
         type: "full-position",
+        img:"https://cdn.al-ain.com/images/2019/11/18/147-170151-samsung-uses-immersed-factories-china-phones_700x400.png",
         description: `
         Jobskey Consultancy is recruiting for the role "Web Developer" in Riyadh, Saudi Arabia.
         
@@ -347,6 +357,7 @@ const job = [
         title: "Mobile App Developer",
         location: "Jeddah",
         type: "full-position",
+        img:"https://vid.alarabiya.net/images/2021/09/19/752c82f3-8c3f-4587-845d-8a23bdea9643/752c82f3-8c3f-4587-845d-8a23bdea9643_16x9_1200x676.jpg?width=1138",
         description: `
         Analyses the characteristics of current and new products and proposes improvements in the design of the database so as to support their efficient operation
         Analyses all requests for the extraction of data and applies data mining and data pulling techniques, so as to provide to the relevant parties the requested information
@@ -395,6 +406,7 @@ const job = [
         title: "Mobile App Developer",
         location: "Jeddah",
         type: "full-position",
+        img:"https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/%D8%B4%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9_%D9%84%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1_%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A_SDAIA.svg/1200px-%D8%B4%D8%B9%D8%A7%D8%B1_%D8%A7%D9%84%D9%87%D9%8A%D8%A6%D8%A9_%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9_%D9%84%D9%84%D8%A8%D9%8A%D8%A7%D9%86%D8%A7%D8%AA_%D9%88%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1_%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A_SDAIA.svg.png",
         description: `Core Responsibilities:
 
 
@@ -426,68 +438,3 @@ const job = [
 ]
 
 module.exports =  job ;
-
-
-// {
-//     id: 5,
-//     title: "NodeJS Backend Developer",
-//     location: "Mecca",
-//     type: "full-position",
-//     description: `In order to build and maintain the technology needed to power the components which enable user facing side of the applications, we are looking forward to hire a backend developer to join our team. Being one of the important technical team member in the development team, you will be responsible and entitled to the following requirements and objectives:
-
-//     Responsibilities
-//     Responsible to participate in the entire application life cycle focusing on coding and debugging
-//     Gather and address technical and design requirements, in addition to troubleshoot and debug applications
-//     Ensure writing clean code to develop functional web applications, perform UI tests to optimise performance
-//     Responsible to collaborate with front end developers to integrate user-facing elements with server side logic and liaise with developers, designers and system administrators to identify new features
-//     For future use, ability to build reusable code and libraries, follow emerging technologies and manage cutting-edge technologies to improve legacy applications
-    
-//     Requirements
-//     Bachelor’s Degree in Computer Science or Information technology or above with minimum 3 years of experience
-//     Certified experience as a backend developer with understanding in MVC architecture
-//     Proficiency in JavaScript with hands on experience with relevant tools & technologies, frameworks like express and programming languages especially node.js and relevant ones
-//     Strong hold on databases especially Mongo DB, MySQL and API driven environment(REST/SOAP API)
-//     Complete understanding of the entire web development process i.e. design, development and deployment with basic knowledge of front end languages
-//     Problem solving attitude, in addition to analytical, teamwork and time management skills`
-
-// }
-
-
-// {
-//     id: 1,
-//     title: "Senior Software Engineer",
-//     location: "Ryiadh",
-//     type: "full-position",
-//     description: `Introduction
-
-//     At IBM, work is more than a job - it's a calling: To build. To design. To code. To consult. To think along with clients and sell. To make markets. To invent. To collaborate. Not just to do something better, but to attempt things you've never thought possible. Are you ready to lead in this new era of technology and solve some of the world's most challenging problems? If so, lets talk.
-    
-//     Your Role and Responsibilities
-    
-//     IBM Services is a team of business, strategy, and technology consultants enabling enterprises to make smarter decisions and providing unparalleled client and consumer experiences in cognitive, data analytics, cloud technology and mobile application development.
-    
-//     We are looking for Thought Leaders, Advisory Strategists, Chief Technologists, Multi-Cloud & Hybrid Cloud Sales Directors, Modernization Evangelists, Consultants and Architects that will join our team which is a key growing business area for IBM.
-    
-//     Technical specialists are responsible to build applications and integrate a broad variety of products, technologies, and services; various systems and applications architectures; and diverse hardware and software components to deliver outcomes for clients. They should be able to design software solutions that meet client requirements. They must demonstrate the application of their technology skills and experience in a client environment. They should be familiar with more than one approach to software development.
-    
-//     At IBM, we offer consultancy services for a full-stack cloud platform that spans public, private and hybrid environments where you can build with over 170 products and services covering Data, Serverless, Containers, AI, IoT and Blockchain, and draw on deep industry expertise which helps clients on their journey to the cloud.
-    
-//     We’re responsible for defining and implementing application roadmaps, architecture migration, modernization and operating models for cloud – for many of the biggest and most complex integration programmes in the marketplace. You will perform a Specialist technical role with a passion for delivery excellence.
-    
-//     Responsibilities
-    
-//     Become a trusted advisor to our clients through superior work.
-//     Understand our client’s strategic needs, short and long-term business objectives and then articulate and formulate proposals and statements of work which are aligned
-//     Responsible for applications-related quality, performance, availability, scalability, and integrity. They are also responsible for the functional interface to applications and for ensuring application usability.
-//     Designs applications required to automate business processes and meet business needs. The resulting design may run on multiple platforms and may be composed of multiple software packages and custom components.
-//     Defines best practices in the critical evaluation and selection and / or development of the software components and hardware requirements of the applications and data, and the development of the application, including evaluation and selection of development methods, development processes, best practices and tools.
-//     Assume overall technical responsibility for the success of proposed solution design, solution content, solution construction, and solution integration in an industry vertical.
-//     Responsible for ensuring a high level of customer satisfaction through comprehensive knowledge of solutions offerings, strategies and direction as it relates to the client's business, infrastructure and industry.
-//     Propose high quality solutions to clients in response to varying business requirements.
-//     Should incorporate secure practices throughout your project from the design phase through development and testing to implementation.
-//     Should be well informed of the industry standards for deciding the choice of standards for a given set of client requirements.
-//     Should adopt efficient and automated practices for building and deploying code.
-//     Should understand the strengths and weaknesses of different languages and/or frameworks in the context of the project.
-//     Should be able to participate effectively in the QA process`
-
-// }

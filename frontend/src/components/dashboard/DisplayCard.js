@@ -15,7 +15,7 @@ function DisplayCard(props){
     }
     return(
       <Card style={{width: '20rem',height:"auto",borderRadius:"20px"}}>
-      <Card.Img style={{borderRadius:"20px"}} variant="top" src="https://www.aleqt.com/sites/default/files/rbitem/2021/10/24/1780136-1840546666.png" />
+      <Card.Img style={{borderRadius:"20px",height:'10rem',width:'317px'}} variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text>{props.description}</Card.Text>

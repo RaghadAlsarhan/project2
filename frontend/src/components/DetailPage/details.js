@@ -9,7 +9,7 @@ function DisplayDetails(props) {
       <Card style={{ width: "70rem", height: "auto" }}>
         <Card.Body>
           <Card.Img
-            style={{ width: "30rem", height: "15rem",marginLeft:'4rem' }} variant="top" src="https://www.aleqt.com/sites/default/files/rbitem/2021/10/24/1780136-1840546666.png"/>
+            style={{ width: "30rem", height: "15rem",marginLeft:'4rem' }} variant="top" src={props.img}/>
           <Link to="/user/signin">
             <Button variant="primary" size="lg" style={{backgroundColor: "#002952",border:"none",borderRadius:"10px",marginLeft:'20rem'}}>Apply now</Button>
           </Link>

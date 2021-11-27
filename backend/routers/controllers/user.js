@@ -21,10 +21,7 @@ const addNewUser = (req,res)=>{
     const addedUser = {
         id: req.body.id,
         email: req.body.email,
-        password: req.body.password,
-        degree: req.body.degree,
-        specilization: req.body.specilization,
-        GPA: req.body.GPA
+        password: req.body.password
     };
     console.log(addedUser)
     user.push(addedUser)

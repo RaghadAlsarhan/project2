@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Card, Container, Row, Col, Button, Image } from "react-bootstrap";
-import "./home.css";
 import welcomeHome from "../img/welcomeHome.png"
 import Header from '../header/index'
 

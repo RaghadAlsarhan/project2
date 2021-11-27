@@ -14,6 +14,7 @@ function DisplayPage() {
   const [desc, setDesc] = useState([]);
   const [type, setType] = useState([]);
   const [location, setLocation] = useState([]);
+  const [img, setImg] = useState([]);
 
   const { id } = useParams();
 
@@ -24,6 +25,7 @@ function DisplayPage() {
       setDesc(res.data.description);
       setType(res.data.type);
       setLocation(res.data.location);
+      setImg(res.data.img);
       })
       // console.log({desc});
   }, []);
@@ -36,6 +38,7 @@ function DisplayPage() {
             description={desc}
             type={type}
             location={location}
+            img={img}
           />
     </Container>
   );

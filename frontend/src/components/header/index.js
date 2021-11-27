@@ -4,6 +4,7 @@ import Devjob from '../img/Devjob.png'
 
 function Header() {
   return (
+	  <div>
 	<Nav defaultActiveKey="/" as="ul" style={{marginLeft:"-50px",marginTop:"-20px"}}>
 		<Nav.Item as="li">
 	<Image src={Devjob} alt="logo" style={{height:"11rem", width:"9rem"}}></Image>
@@ -14,16 +15,9 @@ function Header() {
 	<Nav.Item as="li" style={{marginTop:"60px"}}>
 	  <Nav.Link href="/job" style={{color:"#89321A"}}>Jobs</Nav.Link>
 	</Nav.Item>
-	
   </Nav>
-    // <Row>
-	//   <Col style={{marginTop:"-25px",marginLeft:"-55px"}}  >
-	// 	  <Image src={Devjob} alt="logo" style={{height:"11rem", width:"9rem"}}></Image>
-	// 	</Col>
-	// 	<Col>
-    //     <Button variant="link">Home</Button>
-	// 	</Col>
-    // </Row>
+  <hl style={{width:'10px'}}></hl>
+  </div>
   );
 }
 

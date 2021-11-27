@@ -20,7 +20,7 @@ const navigate = useNavigate();
         .post("/user/signin",{email, password})
         .then((res)=>{
             console.log(res.data);
-            navigate("/job/id");
+            navigate("/job");
         })
         .catch((err)=>{
             console.log(err);
@@ -30,7 +30,8 @@ const navigate = useNavigate();
   return (
     <Container>
     <Header />
-    <Form id="formName" onSubmit={handleSubmit}>
+    <Container style={{borderStyle:'solid',borderRadius:'20px',borderColor:'#dee2e6',borderWidth:'1px',boxShadow:'5px 7px #adb5bd'}}>
+    <Form id="formName" onSubmit={handleSubmit} style={{margin:'60px 100px', width:'700px'}}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Enter your email</Form.Label>
         <Form.Control 
@@ -55,16 +56,16 @@ const navigate = useNavigate();
         />
       </Form.Group>
    
-      <Button variant="primary" type="submit">
+      <Button variant="primary" type="submit" style={{backgroundColor: "#002952",border:"none",borderRadius:"10px"}}>
         Submit
       </Button>
-      <br/>
+      <br/><br/>
       <Link to="/user/register">
-      <Card.Link href="#">If you did not register, register</Card.Link>
+      <Card.Link href="#" style={{color:'black'}}>If you did not register, click here</Card.Link>
       </Link>
     </Form>
-    
     </Container>
+  </Container>
   );
 }
 export default Login;
