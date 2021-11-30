@@ -1,9 +1,10 @@
 import { positions } from "@mui/system";
 import axios from "axios";
 import React, { useState } from "react";
-import { Form, Button, Container } from 'react-bootstrap';
+import { Form, Button, Container, Card } from 'react-bootstrap';
 import {Link} from 'react-router-dom'
 import Header from "../header";
+import {useNavigate} from 'react-router-dom'
 
 
 function Register() {
@@ -11,25 +12,38 @@ function Register() {
   const [password, setPassword] = useState("");
   // const [degree, setDegree] = useState("");
   // const [specilization, setSpecilization] = useState("");
-  // const [GPA, setGPA] = useState("");
+  const navigate = useNavigate();
+
 
   function handleSubmit(e){
-    e.preventdefault()
+    e.preventDefault();
 
     axios
-    .post('user/register', {email, password})
+    .post('/user/register', {email, password})
     .then((res)=>{
         console.log(res.data);
+        navigate("/user/signin")
     })
     .catch((err)=>{
         console.log(err);
     })
-
   }
 
+  function validate(){
+    if(email == "" && password ==""){
+      alert("Enter your information")
+    }else{
+    alert("ok")
+  }
+}
+
+
+
   return (
-    <Container>
+    // <Container>
+      <div>
     <Header />
+    <div style={{marginRight:'4rem',marginLeft:'4rem',marginTop:'4rem'}}>
     <Container style={{borderStyle:'solid',borderRadius:'20px',borderColor:'#dee2e6',borderWidth:'1px',boxShadow:'5px 7px #adb5bd'}}>
     <Form id="regForm" onSubmit={handleSubmit} style={{margin:'60px 100px', width:'700px'}} >
       <Form.Group className="mb-3" controlId="formBasicEmail" >
@@ -84,28 +98,21 @@ function Register() {
         />
       </Form.Group>
 
-      {/*<Form.Group className="mb-3" controlId="formBasicGPA">
-        <Form.Label>GPA</Form.Label>
-        <Form.Control
-          type="text"
-          placeholder="GPA"
-          name="GPA"
-          id="GPA"
-          // onChange={(e) => {
-          //   setGPA(e.target.value);
-          // }}
-        />
-      </Form.Group> */}
       <Form.Group>
-      <Link to="/user/signin">
-      <Button variant="primary" type="submit" style={{backgroundColor: "#002952",border:"none",borderRadius:"10px"}}>
+      {/* <Link to="/user/signin"> */}
+      <Button variant="primary" onClick={validate} type="submit" style={{backgroundColor: "#002952",border:"none",borderRadius:"10px"}}>
         Submit
       </Button>
-      </Link>
+      {/* </Link> */}
       </Form.Group>
+      <br/>
+      <Link to="/user/signin">
+      <Card.Link href="#" style={{color:'black'}}>Go login</Card.Link>
+      </Link>
      </Form>
      </Container>
-    </Container>
+     </div>
+     </div>
   );
 }
 export default Register;

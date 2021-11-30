@@ -31,16 +31,18 @@ function DisplayPage() {
   }, []);
   
   return (
-    <Container>
+    <div>
       <Header />
-          <DisplayDetails
-            title={title}
-            description={desc}
-            type={type}
-            location={location}
-            img={img}
-          />
-    </Container>
+      <div style={{marginRight:'4rem',marginLeft:'4rem'}}>
+        <DisplayDetails
+          title={title}
+          description={desc}
+          type={type}
+          location={location}
+          img={img}
+        />
+      </div>
+    </div>
   );
 }
 export default DisplayPage;

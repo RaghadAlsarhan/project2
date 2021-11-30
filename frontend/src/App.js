@@ -5,6 +5,7 @@ import Login from './components/login/index';
 import Register from './components/registration/index'
 import DisplayPage from './components/DetailPage/index'
 import Home from './components/Home/index'
+import Applied from './components/applied';
 
 
 const App = () => {
@@ -15,6 +16,7 @@ const App = () => {
 			<Route path="/job/:id" element={<DisplayPage />}/>
 			<Route path="/user/signin" element={<Login />}/>
 			<Route path="/user/register" element={<Register />}/>
+			<Route path="/user/signin/applied" element={<Applied />}/>
 		</Routes>
 	</div>
 };

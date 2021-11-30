@@ -20,6 +20,20 @@ const getJob = (req, res)=> {
     }
 }
 
+const findJob = (req, res)=> {
+    const jobLocation = req.params.location
+    console.log(jobLocation);
+    const foundJob = job.filter((elem)=>{
+       return elem.location === jobLocation
+    })
+    if(foundJob){
+        res.send(foundJob)
+    }else{
+        res.send("Error")
+    }
+}
+
+
 const addNewJob = (req, res)=>{
     const addedJob = {
         id: req.body.id,
@@ -62,7 +76,7 @@ const deleteJob = (req, res)=>{
 }
 
 
-module.exports = {getAllJob, getJob, addNewJob, updateJob, deleteJob}
+module.exports = {getAllJob, getJob, addNewJob, updateJob, deleteJob, findJob}
 
 
 // const getJob = (req, res)=> {

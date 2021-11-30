@@ -20,7 +20,7 @@ const navigate = useNavigate();
         .post("/user/signin",{email, password})
         .then((res)=>{
             console.log(res.data);
-            navigate("/job");
+            navigate("/user/signin/applied");
         })
         .catch((err)=>{
             console.log(err);
@@ -28,8 +28,10 @@ const navigate = useNavigate();
     }
 
   return (
-    <Container>
+    // <Container>
+    <div>
     <Header />
+    <div style={{marginRight:'4rem',marginLeft:'4rem',marginTop:'4rem'}}>
     <Container style={{borderStyle:'solid',borderRadius:'20px',borderColor:'#dee2e6',borderWidth:'1px',boxShadow:'5px 7px #adb5bd'}}>
     <Form id="formName" onSubmit={handleSubmit} style={{margin:'60px 100px', width:'700px'}}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -65,7 +67,9 @@ const navigate = useNavigate();
       </Link>
     </Form>
     </Container>
-  </Container>
+  {/* </Container> */}
+  </div>
+  </div>
   );
 }
 export default Login;

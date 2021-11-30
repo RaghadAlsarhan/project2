@@ -23,7 +23,7 @@ function DisplayCard(props){
             <ListGroupItem>Type: {props.type}</ListGroupItem>
             <ListGroupItem>Location: {props.location}</ListGroupItem>
           </ListGroup>
-          <Button size="small" style={{marginTop:"10px",backgroundColor: "#9A381D",border:"none",borderRadius:"15px",opacity:".9",marginLeft:"30%"}} onClick={()=>{handleClick(props.id)}}>Learn More</Button>
+          <Button size="small" style={{marginTop:"10px",backgroundColor: "#9A381D",border:"none",borderRadius:"15px",opacity:".9",marginLeft:"30%"}} onClick={()=>{handleClick(props.id)}}>Show details</Button>
       </Card.Body>
     </Card>
     )

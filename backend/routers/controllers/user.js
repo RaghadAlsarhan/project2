@@ -23,11 +23,17 @@ const addNewUser = (req,res)=>{
         email: req.body.email,
         password: req.body.password
     };
-    console.log(addedUser)
-    user.push(addedUser)
-    res.send(user)
-    res.status(201).send(addedUser);
-    res.status(400).send("error");
+    console.log(req.body.email)
+    const findUser = user.find((res)=>{
+        return  res.email === req.body.email
+    })
+    console.log(findUser)
+    if(!findUser){
+     user.push(addedUser)
+     res.send(user)
+    }else{
+        res.send("user is already exsist");
+    }
 };
 
 module.exports = {getUser, addNewUser, getAllUsers};

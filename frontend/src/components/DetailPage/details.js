@@ -4,8 +4,7 @@ import { Link, useParams } from "react-router-dom";
 
 function DisplayDetails(props) {
   return (
-    <Container>
-      <Row sm={9}>
+      // <Row sm={9}>
       <Card style={{ width: "70rem", height: "auto" }}>
         <Card.Body>
           <Card.Img
@@ -25,8 +24,7 @@ function DisplayDetails(props) {
           </ListGroup>
         </Card.Body>
       </Card>
-      </Row>
-    </Container>
+      // </Row>
   );
 }
 export default DisplayDetails;
