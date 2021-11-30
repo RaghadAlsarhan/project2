@@ -33,7 +33,7 @@ function DisplayPage() {
   return (
     <div>
       <Header />
-      <div style={{marginRight:'4rem',marginLeft:'4rem'}}>
+      <div style={{marginRight:'4rem',marginLeft:'4rem',marginTop:'3rem'}}>
         <DisplayDetails
           title={title}
           description={desc}

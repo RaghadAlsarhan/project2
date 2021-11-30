@@ -14,7 +14,7 @@ function DisplayCard(props){
 
     }
     return(
-      <Card style={{width: '20rem',height:"auto",borderRadius:"20px"}}>
+      <Card style={{width: '20rem',height:"auto",borderRadius:"20px",borderShadow:'10px'}}>
       <Card.Img style={{borderRadius:"20px",height:'10rem',width:'317px'}} variant="top" src={props.img} />
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
