@@ -9,10 +9,7 @@ const getJob = (req, res)=> {
     const jobID = req.params.id
     const foundJob = job.find((elem)=>{
         return elem.id == jobID
-        //console.log(jobID);
-        //console.log(req.params.id);
     })
-    console.log(foundJob);
     if(foundJob){
         res.send(foundJob);
     }else{
@@ -22,7 +19,6 @@ const getJob = (req, res)=> {
 
 const findJob = (req, res)=> {
     const jobLocation = req.params.location
-    console.log(jobLocation);
     const foundJob = job.filter((elem)=>{
        return elem.location === jobLocation
     })
@@ -42,7 +38,6 @@ const addNewJob = (req, res)=>{
         type: req.body.type,
         description: req.body.description
     };
-    console.log(addedJob);
     job.push(addedJob)
     res.status(201).send(addedJob);
     res.status(400).send("error");
@@ -77,18 +72,3 @@ const deleteJob = (req, res)=>{
 
 
 module.exports = {getAllJob, getJob, addNewJob, updateJob, deleteJob, findJob}
-
-
-// const getJob = (req, res)=> {
-//     const foundJob = job.find((elem)=>{
-//        return elem.id == req.params.id
-//         //console.log(elem.id);
-//         //console.log(req.params.id);
-//     })
-//     console.log(foundJob);
-//     if(foundJob){
-//         res.send(foundJob);
-//     }else{
-//         res.send("Error job not found")
-//     }
-// }

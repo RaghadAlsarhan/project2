@@ -41,7 +41,7 @@ function Register() {
     <div>
       <Header />
       <div
-        style={{ marginRight: "4rem", marginLeft: "4rem", marginTop: "4rem" }}
+        style={{marginRight:'20rem',marginLeft:'20rem',marginTop:'4rem'}}
       >
         <Container
           style={{
@@ -55,12 +55,13 @@ function Register() {
           <Form
             id="regForm"
             onSubmit={handleSubmit}
-            style={{ margin: "60px 100px", width: "700px" }}
+            style={{margin:'20px 60px 70px 60px', width:'700px',height:'400px'}}
           >
             <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>{errorMessage}</Form.Label><br/>
+              <Form.Label  style={{color:'red'}}>{errorMessage}</Form.Label><br/>
               <Form.Label>Email address</Form.Label>
               <Form.Control
+              style={{width:'650px'}}
                 type="email"
                 id="email"
                 placeholder="Enter email"
@@ -71,7 +72,7 @@ function Register() {
               />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicPassword">
+            <Form.Group style={{width:'650px'}} className="mb-3" controlId="formBasicPassword">
               <Form.Label>Password</Form.Label>
               <Form.Control
                 type="password"
@@ -84,7 +85,7 @@ function Register() {
               />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicDegree">
+            <Form.Group style={{width:'650px'}} className="mb-3" controlId="formBasicDegree">
               <Form.Label>Degree</Form.Label>
               <Form.Control
                 type="text"
@@ -94,7 +95,7 @@ function Register() {
               />
             </Form.Group>
 
-            <Form.Group className="mb-3" controlId="formBasicSpecilization">
+            <Form.Group style={{width:'650px'}} className="mb-3" controlId="formBasicSpecilization">
               <Form.Label>Specilization</Form.Label>
               <Form.Control
                 type="text"
@@ -105,7 +106,6 @@ function Register() {
             </Form.Group>
 
             <Form.Group>
-              {/* <Link to="/user/signin"> */}
               <Button
                 variant="primary"
                 onClick={validate}
@@ -114,20 +114,20 @@ function Register() {
                   backgroundColor: "#002952",
                   border: "none",
                   borderRadius: "10px",
+                  marginBottom:'12px'
                 }}
               >
                 Submit
               </Button>
-              {/* </Link> */}
             </Form.Group>
-            <br />
             <Link to="/user/signin">
-              <Card.Link href="#" style={{ color: "black" }}>
-                Go login
+              <Card.Link href="#" style={{ color: "grey" }}>
+                Login
               </Card.Link>
             </Link>
           </Form>
         </Container>
+        
       </div>
     </div>
   );

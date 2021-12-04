@@ -5,7 +5,7 @@ import Login from './components/login/index';
 import Register from './components/registration/index'
 import DisplayPage from './components/DetailPage/index'
 import Home from './components/Home/index'
-import Applied from './components/applied';
+import Applied from './components/applaied/index';
 
 
 const App = () => {

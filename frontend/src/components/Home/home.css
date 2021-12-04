@@ -1,0 +1,39 @@
+.homeImg{
+    height:30rem;
+    width:35rem;
+    margin-top:20px
+}
+
+#p1{
+    font-size: 60px;
+    color: #001F3D
+}
+
+#p2{
+    font-size: 20px;
+    display: inline;
+    opacity: .7;
+}
+
+h2{
+    color: #9A381D;
+    opacity: .7
+}
+
+#homeB{
+    background-color: #9A381D;
+    margin-top: 30px;
+    border: none;
+    border-radius: 20px;
+    opacity: .9
+}
+
+.homeDiv{
+    margin-right:4rem;
+    margin-left:4rem
+}
+
+.homeRow{
+    margin: 0px 1px;
+    margin-top: 3rem
+}

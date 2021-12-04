@@ -192,7 +192,7 @@ const job = [
     {
         id: 6,
         title: "Blockchain Developer",
-        location: "Dammam",
+        location: "Ryiadh",
         type: "full-position",
         img:"https://mychart.mcc.med.sa/assets/global/image/web-moh01-logo.png",
         description: `

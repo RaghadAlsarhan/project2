@@ -1,0 +1,21 @@
+.mainDiv{
+    margin-right: 4rem;
+    margin-left: 5%; 
+    height:5rem; 
+    width:40rem; 
+    box-shadow:inset 0 0 0.5em 0 #ced4da, 0 0 0.5em #ced4da;
+    border-radius:8px;
+    position:relative;
+    background-color:#DFEBC1
+}
+
+.subDiv{
+    margin-top:5rem;
+}
+
+h4{
+    color:#002952;
+    position:absolute;
+    left:50px;
+    padding-top:4%
+}

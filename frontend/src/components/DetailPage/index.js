@@ -1,12 +1,11 @@
-import { Container } from "@mui/material";
 import axios from "axios";
 import React, { useEffect, useState } from "react";
-//import DisplayDetails from './details';
 import { useParams } from "react-router-dom";
-//import { job } from '../../../../backend/routers/jobDB';
 import DisplayDetails from "./details";
 import DisplayCard from "./details";
 import Header from "../header";
+import Footer from "../footer"
+import './detailPage.css'
 
 function DisplayPage() {
   const [data, setData] = useState([]);
@@ -27,13 +26,12 @@ function DisplayPage() {
       setLocation(res.data.location);
       setImg(res.data.img);
       })
-      // console.log({desc});
   }, []);
   
   return (
     <div>
       <Header />
-      <div style={{marginRight:'4rem',marginLeft:'4rem',marginTop:'3rem'}}>
+      <div className='cardDiv'>
         <DisplayDetails
           title={title}
           description={desc}
@@ -42,6 +40,7 @@ function DisplayPage() {
           img={img}
         />
       </div>
+      <Footer />
     </div>
   );
 }

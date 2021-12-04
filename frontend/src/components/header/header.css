@@ -1,0 +1,13 @@
+.nav{
+    margin-top: -40px;
+    background-color: #002952;
+    height: 8rem;
+    border-bottom-right-radius: 80px;
+    box-shadow: 1px 1px 1px 1px
+}
+
+Img{
+    height: 7rem;
+    width: 9rem;
+    margin-top: 27px
+}

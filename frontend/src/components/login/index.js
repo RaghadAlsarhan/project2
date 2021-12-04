@@ -1,4 +1,3 @@
-//import "Login.css";
 import React, {useState} from "react";
 import {useNavigate} from 'react-router-dom'
 import { Form, Button, Card, Container } from 'react-bootstrap';
@@ -42,13 +41,13 @@ const navigate = useNavigate();
     // <Container>
     <div>
     <Header />
-    <div style={{marginRight:'4rem',marginLeft:'4rem',marginTop:'4rem'}}>
+    <div style={{marginRight:'25rem',marginLeft:'25rem',marginTop:'5rem',marginBottom:'9rem'}}>
     <Container style={{borderStyle:'solid',borderRadius:'20px',borderColor:'#dee2e6',borderWidth:'1px',boxShadow:'5px 7px #adb5bd'}}>
-    <Form id="formName" onSubmit={handleSubmit} style={{margin:'60px 100px', width:'700px'}}>
+    <Form id="formName" onSubmit={handleSubmit} style={{margin:'60px 60px', width:'700px'}}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
-        <Form.Label>{errorMessage}</Form.Label><br/>
+        <Form.Label style={{color:'red'}}>{errorMessage}</Form.Label><br/>
         <Form.Label>Enter your email</Form.Label>
-        <Form.Control 
+        <Form.Control style={{width:'500px'}} 
         type="email" 
         placeholder="Enter email" 
         id="email" 
@@ -59,7 +58,7 @@ const navigate = useNavigate();
         />
         
         <Form.Label>Enter your Password</Form.Label>
-        <Form.Control 
+        <Form.Control style={{width:'500px'}}
         type="password" 
         placeholder="Password"
         id="password"
@@ -75,11 +74,10 @@ const navigate = useNavigate();
       </Button>
       <br/><br/>
       <Link to="/user/register">
-      <Card.Link href="#" style={{color:'black'}}>If you did not register, click here</Card.Link>
+      <Card.Link href="#" style={{color:'grey'}}>If you did not register, click here</Card.Link>
       </Link>
     </Form>
     </Container>
-  {/* </Container> */}
   </div>
   </div>
   );
