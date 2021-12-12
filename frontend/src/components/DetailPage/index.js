@@ -3,7 +3,6 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import DisplayDetails from "./details";
 import DisplayCard from "./details";
-import Header from "../header";
 import Footer from "../footer"
 import './detailPage.css'
 
@@ -30,7 +29,6 @@ function DisplayPage() {
   
   return (
     <div>
-      <Header />
       <div className='cardDiv'>
         <DisplayDetails
           title={title}

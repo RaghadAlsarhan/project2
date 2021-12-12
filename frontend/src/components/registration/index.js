@@ -2,8 +2,9 @@ import axios from "axios";
 import React, { useState } from "react";
 import { Form, Button, Container, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import Header from "../header";
 import { useNavigate } from "react-router-dom";
+import Footer from '../footer/index'
+
 
 function Register() {
   const [email, setEmail] = useState("");
@@ -39,9 +40,8 @@ function Register() {
 
   return (
     <div>
-      <Header />
       <div
-        style={{marginRight:'20rem',marginLeft:'20rem',marginTop:'4rem'}}
+        style={{marginRight:'20rem',marginLeft:'20rem',marginTop:'4rem',marginBottom:'115px'}}
       >
         <Container
           style={{
@@ -129,6 +129,7 @@ function Register() {
         </Container>
         
       </div>
+      <Footer />
     </div>
   );
 }

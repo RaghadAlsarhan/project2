@@ -9,5 +9,6 @@
 Img{
     height: 7rem;
     width: 9rem;
-    margin-top: 27px
+    margin-top: 27px;
+    margin-left: 10px;
 }

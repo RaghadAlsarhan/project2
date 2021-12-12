@@ -3,7 +3,7 @@ import {useNavigate} from 'react-router-dom'
 import { Form, Button, Card, Container } from 'react-bootstrap';
 import axios from "axios";
 import {Link} from 'react-router-dom';
-import Header from "../header";
+import Footer from '../footer/index'
 
 
 function Login() {
@@ -40,8 +40,7 @@ const navigate = useNavigate();
   return (
     // <Container>
     <div>
-    <Header />
-    <div style={{marginRight:'25rem',marginLeft:'25rem',marginTop:'5rem',marginBottom:'9rem'}}>
+    <div style={{marginRight:'25rem',marginLeft:'25rem',marginTop:'5rem',marginBottom:'205px'}}>
     <Container style={{borderStyle:'solid',borderRadius:'20px',borderColor:'#dee2e6',borderWidth:'1px',boxShadow:'5px 7px #adb5bd'}}>
     <Form id="formName" onSubmit={handleSubmit} style={{margin:'60px 60px', width:'700px'}}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
@@ -79,6 +78,7 @@ const navigate = useNavigate();
     </Form>
     </Container>
   </div>
+  <Footer />
   </div>
   );
 }

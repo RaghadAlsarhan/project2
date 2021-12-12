@@ -6,10 +6,12 @@ import Register from './components/registration/index'
 import DisplayPage from './components/DetailPage/index'
 import Home from './components/Home/index'
 import Applied from './components/applaied/index';
+import Header from './components/header';
 
 
 const App = () => {
 	return <div>
+		<Header />
 		<Routes>
 			<Route path="/" element={<Home />}/>
 			<Route path="/job" element={<Dashboard />}/>

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import DisplayCard from "./DisplayCard";
-import Header from "../header/index";
 import Footer from "../footer";
 import { useParams } from "react-router";
 import './dashboard.css';
@@ -27,10 +26,9 @@ function Dashboard() {
 
   return (
     <div>
-      <Header />
       <div className='inDiv'>
         <div className='searchDiv'>
-        <labal>Search by city:   </labal>
+        <labal>Search by location:   </labal>
         <input
           type="text"
           id="search"

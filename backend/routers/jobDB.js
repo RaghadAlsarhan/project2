@@ -357,7 +357,7 @@ const job = [
         title: "Mobile App Developer",
         location: "Jeddah",
         type: "full-position",
-        img:"https://vid.alarabiya.net/images/2021/09/19/752c82f3-8c3f-4587-845d-8a23bdea9643/752c82f3-8c3f-4587-845d-8a23bdea9643_16x9_1200x676.jpg?width=1138",
+        img:"https://vid.alarabiya.net/images/2014/11/20/c4b98ed7-bfec-4d3e-9cfb-d084d6c7a752/c4b98ed7-bfec-4d3e-9cfb-d084d6c7a752_16x9_1200x676.jpg?width=1138",
         description: `
         Analyses the characteristics of current and new products and proposes improvements in the design of the database so as to support their efficient operation
         Analyses all requests for the extraction of data and applies data mining and data pulling techniques, so as to provide to the relevant parties the requested information

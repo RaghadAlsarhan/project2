@@ -1,15 +1,15 @@
 .homeImg{
-    height:30rem;
+    height:28rem;
     width:35rem;
-    margin-top:20px
+    margin-top:90px
 }
 
 #p1{
     font-size: 60px;
-    color: #001F3D
+    color: #002952
 }
 
-#p2{
+#p3{
     font-size: 20px;
     display: inline;
     opacity: .7;
@@ -30,10 +30,38 @@ h2{
 
 .homeDiv{
     margin-right:4rem;
-    margin-left:4rem
+    margin-left:4rem;
+    height: 700px
+}
+
+.homeDiv2{
+    height: 700px;
+    background-color: #9a381d;
 }
 
 .homeRow{
     margin: 0px 1px;
-    margin-top: 3rem
+    margin-top: 8rem;
+}
+
+.homeRow2{
+    /* margin-right:5rem;
+    margin-left:10rem; */
+    margin: 0px 1px;
+    margin-top: 8rem;
+}
+.homeImg2{
+    height:33rem;
+    width:35rem;
+    margin-top:65px
+}
+#p2{
+    font-size: 60px;
+    color: #02172e
+}
+
+.homeImg3{
+    height:28rem;
+    width:35rem;
+    margin-top:140px
 }
